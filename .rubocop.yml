@@ -1,0 +1,21 @@
+AllCops:
+  RunRailsCops: true
+
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
+  Exclude:
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'log/**/*'
+
+Style/GuardClause:
+  MinBodyLength: 3
+
+Metrics/LineLength:
+  Max: 100
+  AllowURI: true
+
+inherit_from: .rubocop_todo.yml
