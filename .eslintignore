@@ -1,3 +1,4 @@
-dist
+public
 coverage
-
+vendor
+node_modules
