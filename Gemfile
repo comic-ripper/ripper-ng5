@@ -23,9 +23,13 @@ group :development, :test do
   gem 'rubocop'
   gem 'parser', "~>2.3.0.pre", require: false
 
+
+  # RSpec Edge
   %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
     gem lib, :git => "git://github.com/rspec/#{lib}.git", :branch => 'master'
   end
+
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :development do

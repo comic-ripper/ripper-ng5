@@ -1,24 +1,17 @@
-## README
+# Ripper
+[![Circle CI](https://circleci.com/gh/comic-ripper/ripper-ng.svg?style=svg&circle-token=2a4361366c8563961a5f86f5812276f6d0cc03a2)](https://circleci.com/gh/comic-ripper/ripper-ng)
+[![Code Climate](https://codeclimate.com/github/comic-ripper/ripper-ng/badges/gpa.svg)](https://codeclimate.com/github/comic-ripper/ripper-ng)
+[![Dependency Status](https://gemnasium.com/comic-ripper/ripper-ng.svg)](https://gemnasium.com/comic-ripper/ripper-ng)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
+ 1. git clone git@github.com:comic-ripper/ripper-ng
+ 2. Set up config/database.yml
+ 3. rake db:setup
+ 4. rake assets:install # This installs bower packages and fixes them a little
 
-Things you may want to cover:
+### Dependencies
+ * Postgres, or some other activerecord compatible database
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### More information
+* [Parsers](docs/parsers.md)
+* [Models](docs/comic_models.md)
