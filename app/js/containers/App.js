@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
+// import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { ActionCreators as UndoActions } from 'redux-undo';
+// import { ActionCreators as UndoActions } from 'redux-undo';
 
 
 class App extends Component {
@@ -20,7 +20,7 @@ App.propTypes = {
 };
 
 function select(state, props) {
-  return { };
+  return { state, props };
 }
 
 export default connect(select)(App);
