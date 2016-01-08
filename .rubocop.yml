@@ -15,7 +15,7 @@ Style/GuardClause:
   MinBodyLength: 3
 
 Metrics/LineLength:
-  Max: 100
+  Max: 115
   AllowURI: true
 
 inherit_from: .rubocop_todo.yml

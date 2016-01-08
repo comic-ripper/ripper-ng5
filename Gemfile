@@ -21,6 +21,7 @@ group :development, :test do
   gem 'byebug'
   
   gem 'rubocop'
+  gem 'parser', "~>2.3.0.pre", require: false
 
   %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
     gem lib, :git => "git://github.com/rspec/#{lib}.git", :branch => 'master'
