@@ -6,7 +6,7 @@
   "scripts": {
     "eslint": "eslint .",
     "start": "node app/js/server.js",
-    "dist": "NODE_ENV=production webpack -p --config webpack.production.config.js",
+    "dist": "NODE_ENV=production webpack --config webpack.production.config.js",
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test:watch": "npm test -- --watch"
   },
