@@ -4,6 +4,8 @@ const config = require('../../webpack.config');
 
 /* eslint-disable no-console */
 
+const portToUse = 3000;
+
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
@@ -11,10 +13,10 @@ new WebpackDevServer(webpack(config), {
   stats: {
     colors: true,
   },
-}).listen(3001, 'localhost', function message(err) {
+}).listen(portToUse, 'localhost', function message(err) {
   if (err) {
     console.log(err);
   }
 
-  console.log('Listening at localhost:3001');
+  console.log('Listening at localhost:' + portToUse);
 });

@@ -34,6 +34,8 @@ group :development, :test do
 end
 
 group :development do
+  gem 'foreman', require: false
+
   gem 'spring'
   gem 'spring-commands-rspec'
   # gem 'spring-commands-cucumber'
