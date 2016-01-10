@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import App from './App';
+import App from '../components/App';
 
 /* eslint-disable react/prop-types */
 export default class Root extends Component {
