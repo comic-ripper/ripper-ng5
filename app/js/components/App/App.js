@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import { ActionCreators as UndoActions } from 'redux-undo';
 import { connect } from 'react-redux';
 
-import Navbar from '../Navbar';
+import AppNav from '../AppNav';
 
 import './App.scss';
 
@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <AppNav />
         Ripper
       </div>
     );
