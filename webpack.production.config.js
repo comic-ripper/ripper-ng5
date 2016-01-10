@@ -1,10 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   devtool: 'source-map',
   entry: [
+    'bootstrap-loader',
     './app/js/index',
   ],
   output: {
@@ -31,14 +33,33 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
+        loaders: ['react-hot', 'babel'],
         exclude: /node_modules/,
         include: path.join(__dirname, 'app'),
       },
       {
+        test: /\.css$/,
+        loaders: ['style', 'css', 'postcss'],
+      },
+      {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass'],
+        loaders: ['style', 'css', 'postcss', 'sass'],
+      },
+      {
+        test: /\.(woff2?|svg)$/,
+        loader: 'url?limit=10000',
+      },
+      {
+        test: /\.(ttf|eot)$/,
+        loader: 'file',
+      },
+      {
+        test: /bootstrap-sass\/assets\/javascripts\//,
+        loader: 'imports?jQuery=jquery',
       },
     ],
   },
+  postcss: [
+    autoprefixer,
+  ],
 };

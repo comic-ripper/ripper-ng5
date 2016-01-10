@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Navbar, Button } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 class AppNav extends React.Component {
   static propTypes = {
-
+    brand: React.PropTypes.string.isRequired,
   };
 
   render() {
@@ -12,7 +12,7 @@ class AppNav extends React.Component {
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <Button>Foo</Button>
+            {this.props.brand}
           </Navbar.Brand>
         </Navbar.Header>
       </Navbar>

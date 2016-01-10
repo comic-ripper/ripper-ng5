@@ -5,13 +5,11 @@ import { connect } from 'react-redux';
 
 import AppNav from '../AppNav';
 
-import './App.scss';
-
 class App extends Component {
   render() {
     return (
       <div>
-        <AppNav />
+        <AppNav brand="Ripper" />
         Ripper
       </div>
     );

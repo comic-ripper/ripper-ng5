@@ -1,12 +1,10 @@
 
 import { combineReducers } from 'redux';
 
-import undoable from 'redux-undo';
-
-import config from './config';
+// import undoable from 'redux-undo';
 
 const rootReducer = combineReducers({
-  config,
+
 });
 
-export default undoable(rootReducer);
+export default (rootReducer);
